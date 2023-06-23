@@ -23,7 +23,7 @@ async function addNote(req, res) {
 async function deleteNote(req, res) {
     const id = req.params.noteId;
     try {
-        await Note.deleteOne({ id: id })
+        await Note.findByIdAndDelete(id)
         res.status(200).json({success: true, message: 'note deleted'})
     } catch (error) {
         res.status(500).json({success: false, message: 'failed to delete note'})
