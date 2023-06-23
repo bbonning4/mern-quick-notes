@@ -1,0 +1,18 @@
+.note-component {
+    display: flex;
+    justify-content: center;
+}
+
+.note-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.note-content h2 {
+    margin-right: 10px;
+}
+
+.note-content .note-date {
+    margin-right: 10px;
+}
